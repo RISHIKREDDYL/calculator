@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>	
+<head>
+	<title>Calculator App</title>
+</head>
+<body>
+	<div class="CAL-BOX">
+		<h1>Make Your Calculations</h1>
+	<table border="2">
+		<tr>
+			<td colspan="3"><input type="text" id="screenvalue"></td>
+			<td><input type="button" value="Clear" onclick="clr()"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="1" onclick="display('1')"></td>
+			<td><input type="button" value="2" onclick="display('2')"></td>
+			<td><input type="button" value="3" onclick="display('3')"></td>
+			<td><input type="button" value="+" onclick="display('+')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="4" onclick="display('4')"></td>
+			<td><input type="button" value="5" onclick="display('5')"></td>
+			<td><input type="button" value="6" onclick="display('6')"></td>
+			<td><input type="button" value="-" onclick="display('-')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="7" onclick="display('7')"></td>
+			<td><input type="button" value="8" onclick="display('8')"></td>
+			<td><input type="button" value="9" onclick="display('9')"></td>
+			<td><input type="button" value="*" onclick="display('*')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="0" onclick="display('0')"></td>
+			<td><input type="button" value="." onclick="display('.')"></td>
+			<td><input type="button" value="/" onclick="display('/')"></td>
+			<td><input type="button" value="=" onclick="Evaluate()"></td>
+		</tr>
+	</table>
+	<h1>Made by</h1>
+	<h1><a href="https://rishikreddy.com">Rishik Reddy</a></h1>
+	</div>
+	<div class="RES-BOX">
+		<h1 id="calcstart">Please Start Calculating...</h1>
+		<h1 id="resultBox"></h1>
+		<h4 id="quoteGenerator">"An expert is a man who has made all the mistakes that can be made in a very narrow field." - Neils Bohr</h4>
+		<p>
+			Code available on <a href="https://www.github.com/rishikreddyl"> Github </a><br>
+			First Created on 12th May 2020, 03:24:37 PM IST
+		</p>
+	</div>
+	<script type="text/javascript" src="calculator.js"></script>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+</body>
+</html>
